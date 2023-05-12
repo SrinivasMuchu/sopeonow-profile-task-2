@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="assets/logo.PNG" type="image/icon type">
+    <link rel="icon" href="assets/logo.PNG" type="image/icon type">
+    <title>Sopeonow profile task</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Button to enter profile -->
+  <button onclick="profile()" type="button" class="btn btn-success btn-style" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    View Your Profile
+  </button>
+  
+ <!-- profile -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header mdl-header">
+             <div class="profile-data">
+                  <img src="assets/male 1.svg" height="24px" width="24px"/>
+                  <div class="profile-name">
+                      <h5 style="color: #00252F; font-weight: 400;">ETHAN WONG</h5>
+                      <div style="color: rgba(0, 37, 47, 0.56);font-weight: 400;">Male, 60 yrs (Senior Citizen)</div>
+                  </div>
+             </div>
+             <div class="address-data">
+                <div style="text-align: right;color: #888888;">Resident</div>
+                <div class="city-name">Malaysia</div>
+             </div>
+        </div>
+
+
+        <div class="modal-body">
+          <div class="row">
+             <div class="col modal-card">
+                  <div class="modal-detail">
+                      <div>Patient Id</div>
+                      <div> <i class="fa-solid fa-id-card"></i> </div>
+                  </div>
+                  <input type="text" value="5321344" disabled style="background: #FFF6EF;border: none;"/>
+             </div>
+             <div class="col modal-card">
+                <div class="modal-detail">
+                    <div>Visit Id</div>
+                    <div> <i class="fa-solid fa-calendar-days"></i></div>
+                </div>
+                <input type="text" value="2735678" disabled style="background: #FFF6EF;border: none;"/>
+             </div>
+             <div class="col modal-card">
+                <div class="modal-detail">
+                    <div>Ward</div>
+                    <div><i class="fa-sharp fa-solid fa-hospital"></i></div>
+                </div>
+                <input type="text" value="Ward 2A" disabled style="background: #FFF6EF;border: none;"/>
+             </div>
+           </div>
+           <div class="row">
+                <div class="col modal-card">
+                    <div class="modal-detail">
+                        <div>Bed (F5-102)</div>
+                        <div> <i class="fa-sharp fa-solid fa-bed-pulse"></i> </div>
+                    </div>
+                    <input type="text" value="Single Bed" disabled style="background: #FFF6EF;border: none;"/>
+                </div>
+                <div class="col modal-card">
+                    <div class="modal-detail">
+                        <div>Payor</div>
+                        <div> <i class="fa-sharp fa-solid fa-umbrella"></i></div>
+                    </div>
+                    <input type="text" value="AIA BHD (INDIVIDUAL)" disabled style="background: #FFF6EF;border: none;"/>
+                </div>
+           </div>
+        </div>
+
+
+
+        <div class="modal-journey-track">
+            <div class="journey-title">
+                <h5 style="color:#00252F;font-weight: 100;font-size: 18px;">Admission Journey</h5>
+                <div>
+                    Elapsed Time 
+                     <span class="elaps-time"> 02:45 </span>
+                </div>
+            </div>
+        <div class="row1">
+            <div class="col1">
+                <p>00:24</p>
+                <p>02:23</p>
+                <p>00:15</p>
+                <p></p>
+                <p></p>
+            </div>
+       
+                <div class="col2">
+                    <div class="image-con" id="myElement1"><img src="assets/correct.svg" alt=""  width="25px" height="25px"></div>
+                    <div class="line"><div class="progress" id="line1"></div></div>
+                    <div class="image-con" id="myElement2"><img src="assets/correct.svg" alt="" width="25px" height="25px"></div>
+                    <div class="line"><div class="progress" id="line2"></div></div>
+                    <div class="image-con" id="myElement3"><img src="assets/correct.svg" alt="" width="25px" height="25px"></div>
+                    <div class="line"><div class="progress" id="line3"></div></div>
+                    <div class="image-con" id="myElement4"><img src="assets/correct.svg" alt="" width="25px" height="25px"></div>
+                    <div class="line"><div class="progress" id="line4"></div></div>
+                    <div class="image-con" id="myElement5"><img src="assets/accept.svg" alt="" width="25px" height="25px" style="filter: brightness(1000%) "></div>
+                    <div class="line"><div class="progress" id="line5"></div></div>
+                    <div class="image-con" id="myElement6"><img src="assets/admit.svg" alt="" width="25px" height="25px " style="filter: brightness(1000%)"></div>
+                </div>
+                <div class="col3">
+                    <div class="c1">
+                        <h6 style="font-weight: 700; "> Admission Request <span class="datetime" style="color: #616161; ">Dec 06 2021 11:38 AM</span></h6>
+                                <span> <img src="assets/doc.svg" alt="" width="15px" height="15px"> Jim Chin</span>
+                    </div>
+                    <div class="c1">
+                        <h6 style="font-weight: 700;"> Sent for IGL Approval <span class="datetime" style="color: #616161;">Dec 06 2021 09:00 AM</span></h6>
+                                <span> <img src="assets/doc.svg" alt="" width="15px" height="15px"> Jim Chin</span>
+                    </div>
+                    <div class="c1">
+                        <h6 style="font-weight: 700;"> Received IGL Approval <span class="datetime" style="color: #616161;">Dec 06 2021 11:23 AM</span></h6>
+                                <span> <img src="assets/doc.svg" alt="" width="15px" height="15px"> Jim Chin</span>
+                    </div>
+                    <div class="c1">
+                        <h6 style="font-weight: 700;"> Requested Bed  <span class="datetime" style="color: #616161;">Dec 06 2021 11:38 AM</span></h6>
+                                <span> <img src="assets/doc.svg" alt="" width="15px" height="15px"> Jim Chin</span>
+                    </div>
+                    <div class="c1">
+                        <h6 style="font-weight: 700;"> Admitted </h6><br>
+                               
+                    </div>
+                    <div class="c1" >
+                        <h6 style="font-weight: 700;"> Accepted </h6>
+                               
+                    </div>
+                </div>
+      
+            
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/066d639cf6.js" crossorigin="anonymous"></script>
+    <script src="file.js"></script>
+</body>
+</html>
